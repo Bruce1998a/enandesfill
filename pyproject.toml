@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "enandesfill"
+version = "0.2.0"
+description = "Imputación de datos climáticos (precipitación y temperatura) con métodos clásicos y ML (Kalman, STL+Kalman, KNN, MICE/IterativeImputer, RandomForest, MissForest, XGBoost, LightGBM, Autoencoder opcional)."
+readme = "README.md"
+authors = [{ name="Bruce Anthony Tumbaco Vega", email="bruce.tumbaco@example.com"}]
+requires-python = ">=3.9"
+dependencies = [
+  "pandas>=2.0",
+  "numpy>=1.22",
+  "scikit-learn>=1.2",
+  "statsmodels>=0.14",
+  "pykalman>=0.9.7",
+  "matplotlib>=3.7"
+]
+
+[project.urls]
+Homepage = "https://github.com/Bruce1998a/enandesfill"
